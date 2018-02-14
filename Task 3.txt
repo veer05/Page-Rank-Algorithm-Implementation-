@@ -1,0 +1,57 @@
+Task 3
+
+----- BFS GRAPH ------------------------------------------------------------------------------------------------------------------------------
+
+Pages Ranked as per the inlink count :                                 Pages Ranked as per PageRank Algorithm :        
+                                                                             
+1) international_standard_book_number -> 241                     1)integrated_authority_file             -> 0.0248849703543
+2) tropical_cyclone                   -> 203 			 2)national_diet_library                 -> 0.0212038879899
+3) integrated_authority_file          -> 202			 3)international_standard_book_number    -> 0.0209167026372
+4) national_diet_library              -> 153 			 4)earth                                 -> 0.00683304402279
+5) tornado                            -> 141			 5)temperature                           -> 0.0065394692247
+6) extratropical_cyclone              -> 124			 6)india                                 -> 0.00600211622982
+7) thunderstorm                       -> 122 			 7)tropical_cyclone                      -> 0.00592087168193
+8) cyclone                            -> 114			 8)meteorology                           -> 0.00547771746845
+9) earth                              -> 113 			 9)united_kingdom                        -> 0.00545375346202
+10) wind                              -> 110			 10)china                                -> 0.00509033163336                                                
+                                           
+                            
+------ DFS GRAPH ------------------------------------------------------------------------------------------------------------------------------
+
+Pages Ranked as per the inlink count :                                 Pages Ranked as per PageRank Algorithm :        
+                                                                             
+1) france                            -> 296                      1)europe                                ->0.00641551073068
+2) europe                            -> 276                      2)united_states                         ->0.00628857714513
+3) united_kingdom                    -> 260			 3)france                                ->0.00605384022941
+4) italy                             -> 257 			 4)united_kingdom                        ->0.00556994349166
+5) united_states                     -> 254			 5)germany                               ->0.00545415308741
+6) russia                            -> 249			 6)russia                                ->0.00518265172975
+7) germany                           -> 246 			 7)world_war_ii                          ->0.00498933529442
+8) world_war_ii                      -> 230			 8)italy                                 ->0.00476471020382
+9) spain                             -> 225 			 9)spain                                 ->0.00458849087789
+10) poland                           -> 221			 10)european_union                       ->0.00453374125257  
+
+_________________________________________________________________________________________________________________________________________________
+
+"Not all links are created equal"
+The PageRank of a page recursively depends on the PageRank metric of all pages that link to it
+Pages ranked by Inlink count and pages ranked by PageRanked occour at at different ranks as seen above (earth is ranked below in Inlink count and 
+above in PageRank)
+Some pages which do not have high inlink count appear in the PageRank like (meterology,china,temperature, european_union,india)
+Some pages with higher inlink count do not appear in PageRank like (wind,extratropical_cyclone, poland)
+This suggests that even though a page might have higer inlink count it might always not be of good quality
+
+While it may seem plausible that if many pages point to a page P, Then P is a 'good' page.
+However, some pages are more important than other this distinction is done by Page Rank algorithm.
+Although pagerank may be directly propotional to that of its in-links, but pagerank also factors the folling qualities like
+- Link from an important page may be more important than a link from a unimportant link 
+- Link from differne domain account to higher score than  than link from same domain 
+
+This might actually result in two distinctions :
+- The page may contain less number of inlinks,but it has popular/quality links pointing to it, results in the pagerank of the links to be high or good. 
+- A page may have very large inlink count, but all these inlinks may not be popular and thus will be low pagerank scores.
+Thus using pagerank we might be able to avoid pages that have high inlink count but have poor quality or spam but might pop up due to large number of 
+splurious links that point to a page where as pagerank might identify the splurious links and identify the page as spam and might not give it a higher rank.
+Even though page "wind" might have higher inlink count it is over taken by pages like "india" "meterology" "china" since more high quality links point to this 
+page.Likewise, pages like integrated_authority_file national_diet_library even thogugh may have lower inlink count are ranked higher since they are popular and 
+have many popular links pointing to them.

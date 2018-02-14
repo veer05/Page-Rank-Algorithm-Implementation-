@@ -1,0 +1,35 @@
+
+For Graph_bfs.txt
+
+Number of pages with no inlinks = 0
+
+Given the size of document set to be 1000, The number of pages with no inlinks is 0
+That is, 0/1000 = 0 
+is the ratio of pages with no inlinks
+
+Number of pages with no outlinks = 331
+
+Given the sizw of document set to be 1000, The number of pages with no outlinks is 331
+That is, 331/1000 = 0.331
+is the ratio of pages with no outlinks 
+Note when I say no outlinks that means that these pages may have outlinks but those outlinks
+may not point to the 1000 URL document collection
+
+
+For Graph_dfs.txt
+
+Number of pages with no inlinks = 0
+
+Given the size of document set to be 1000, The number of pages with no inlinks is 0
+That is, 0/1000 = 0 
+is the ratio of pages with no inlinks
+
+Number of pages with no outlinks = 189
+
+Given the sizw of document set to be 1000, The number of pages with no outlinks is 331
+That is, 189/1000 = 0.189
+is the ratio of pages with no outlinks 
+Note when I say no outlinks that means that these pages may have outlinks but those outlinks
+may not point to the 1000 URL document collection
+
+
